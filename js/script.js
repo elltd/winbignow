@@ -11,8 +11,8 @@ tb8_messages[2] = "NOW!!!!!!!!!!!";
 tb8_messages[3] = "✧～(ゝᴗ ∂ )";
 tb8_rptType = 'infinite';
 tb8_rptNbr = 5;
-tb8_speed = 100;
-tb8_delay = 2000;
+tb8_speed = 500;
+tb8_delay = 400;
 var tb8_counter = 1;
 var tb8_currMsg = 0;
 var tb8_tekst = "";
@@ -49,13 +49,13 @@ function play() {
 
 
 // Make the DIV element draggable:
-dragElement(document.getElementById("draggable"));
+dragElement(document.getElementsByClassName("float-link"));
 
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
+    if (document.getElementsByClassName(elmnt.class + "body")) {
         // if present, the header is where you move the DIV from:
-        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        document.getElementsByClassName(elmnt.class + "body").onmousedown = dragMouseDown;
     } else {
         // otherwise, move the DIV from anywhere inside the DIV:
         elmnt.onmousedown = dragMouseDown;
@@ -128,8 +128,21 @@ function redirectToPage() {
     // Posted by Umair Khan
     // Retrieved 2025-11-06, License - CC BY-SA 3.0
 
-    var redirect = ["loser.html", "history.html", "loser.html", "loser.html", "loser.html"]
+    var redirect = ["loser.html", "loser.html", "thoughts.html", "thoughts.html", "loser.html"]
 
     window.location.href = redirect[Math.floor(Math.random() * 5)]
+}
+
+//poop up
+function showWarning() {
+    // Display a confirmation dialog
+    var userConfirmed = confirm("↑↑↑ for best experience, allow audio autoplay on your browser! ✧～(ゝᴗ ∂ ) 🍀🍀🍀");
+
+    // If the user clicks "Cancel", close the window
+    if (!userConfirmed) {
+        window.close(); // This may not work in all browsers due to security restrictions
+        // Alternatively, you could redirect to a different page or display a message
+        // window.location.href = "about:blank"; // Redirect to a blank page
+    }
 }
 

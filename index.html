@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body onload="showWarning()">
 
 
     <div class="nav">
@@ -47,64 +47,43 @@
 
     </div>
 
-    <header id="floating" class="bevel-box">
+    <header id="floating" class="title">
 
-        <p class="fakelink" onclick="play()">WIN BIG NOW!!!</p><audio id="audio" src="audio/bling.mp3"></audio>
+        <p class="fakelink" onclick="play()">WIN BIG NOW!!!</p><audio id="audio" src="audio/ding.mp3"></audio>
 
     </header>
 
-    <!--<div class="divider">
+    <div class="divider">
         <div class="s-bevel-box"><img src="images/y_swirl.gif"></div>
         <div class="s-bevel-box"><img src="images/y_swirl.gif"></div>
         <div class="s-bevel-box"><img src="images/y_swirl.gif"></div>
-    </div>-->
+    </div>
+    <br>
 
 
     <div class="main-grid">
 
-        <div class="l-bevel-box">
-            <p class="scroll-info">
-            </p>
+        <div class="main-bevel-box">
+            <a id="globe" class="float-link" href="thoughts.html">
+                <img src="https://64.media.tumblr.com/48759af835f4ddc84a7e43763d43f796/6f6d606d234e37e4-3c/s75x75_c1/bd8013ae84e7dce71686a9a1944b7a4bec4c6e66.gifv"
+                    width=200%; height=200%;></a>
+
+
+            <a id="loser" class="float-link" href="loser.html">
+                <img src="images/headbang_favi.gif" width=200%; height=200%;></a>
+
+            <a id="probability" class="float-link" href="loser.html">
+                <img src="images/lucky_favi.gif" width=200%; height=200%;></a>
+
+            <!--<p class="scroll-info">
+  
+            </p>-->
         </div>
-
-        <a id="globe" class="float-link" href="">
-            <img src="https://64.media.tumblr.com/48759af835f4ddc84a7e43763d43f796/6f6d606d234e37e4-3c/s75x75_c1/bd8013ae84e7dce71686a9a1944b7a4bec4c6e66.gifv"
-                width=200%; height=200%;></a>
-
-
-        <a id="loser" class="float-link" href="loser.html">
-            <img src="images/headbang_favi.gif" width=200%; height=200%;></a>
-
-        <a id="probability" class="float-link" href="loser.html">
-            <img src="images/lucky_favi.gif" width=200%; height=200%;></a>
-
 
         <button target="_blank" onclick="redirectToPage()"><a onclick="play()" id="roll-button">ROLL</button><audio
             id="audio" src="audio/bling.mp3"></audio></a>
 
-        <div class="m-bevel-box">
-            <p class="scroll-info">The globalization of casino culture looms terrifyingly ascendant—economically,
-                environmentally, and
-                politically. The twenty first century’s diminishing resources and despoiled environment have
-                triggered
-                seismic global shifts that privilege the bare-knuckles strongman paradigm of the winner takes all
-                created by a self-perpetuating elite caste of mega winners while transforming everyone else into an
-                increasingly desperate sea of losers. How did the world turn upside down so quickly while we weren’t
-                paying much attention?
-                <br><br>...<br><br>
-                The architecture of distraction camouflaging glossy rigged systems that now dominate our lives
-                operated
-                originally as brick-and-mortar entertainment zones with their attendant pickpockets, crackpots, and
-                humbug salesmen. These now infest the digital labyrinth 24/7 with endless detours, robotic spam
-                pop-ups,
-                and unhinged tweet storms. We all get tangled up in the web’s overload, too often coming to our
-                senses
-                at the keyboard struggling to recall what we sat down to research in the first place before we got
-                sidetracked into watching cute cats, with no time to calm down from the latest hysteria of social
-                media
-                outrages.
-            </p>
-        </div>
+
     </div>
 
 </body>

@@ -19,6 +19,12 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    margin: 0%;
+
+}
+
 .title {
     width: 100%;
     height: 100%;
@@ -34,8 +40,8 @@ body {
 
     font-weight: 700;
     text-align: center;
-    color: white;
-    text-decoration: underline 3px var(--accent-color);
+    color: rgb(255, 215, 55);
+
 }
 
 
@@ -51,8 +57,16 @@ body {
     text-decoration: underline 3px var(--accent-color);
 }
 
+.two-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
+}
+
 #roll-button {
-    font-size: 5em;
+    font-size: 4.5em;
     text-shadow: -1px -1px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
     -webkit-text-stroke: 0.5px black;
     color: white;
@@ -62,7 +76,7 @@ body {
 }
 
 #roll-button:hover {
-    font-size: 6em;
+    font-size: 5em;
     transition: 0.5s ease-out;
     text-shadow: -1px -1px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
     -webkit-text-stroke: 0.5px black;
@@ -72,8 +86,10 @@ body {
     text-decoration: none;
 }
 
+
+
 button {
-    width: 200px;
+    width: auto;
     height: 100px;
     position: relative;
     background-color: #cccccc;
@@ -82,16 +98,16 @@ button {
     border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
+
     margin-top: 20px;
+    text-decoration: none;
 }
 
 button:hover {
-    background-color: #ffda37;
+    background-color: #d52c2c;
     transition: 0.3s;
+
 }
 
 button:active {
@@ -137,10 +153,10 @@ button:active {
 }
 
 .m-bevel-box {
-    display: none;
+
     width: 300px;
     height: 250px;
-    position: absolute;
+    position: relative;
     background-color: var(--accent-color-2);
     box-sizing: border-box;
     border-style: ridge;
@@ -181,13 +197,13 @@ button:active {
     /* Light top/left, dark bottom/right */
     margin: 0 auto;
     padding-left: 10px;
-    cursor: move;
-    overflow: scroll;
+
+    overflow-y: scroll;
 }
 
 .gallery-bevel-box {
     width: 500px;
-    height: 450px;
+    height: 350px;
     position: relative;
     background-color: var(--accent-color-2);
     box-sizing: border-box;
@@ -227,12 +243,12 @@ button:active {
 
 #loser {
     right: 10%;
-    top: 34px;
+    top: 340px;
 }
 
 #probability {
     right: 70%;
-    top: 80%;
+    top: 580px;
 }
 
 .scroll-info {
@@ -241,14 +257,6 @@ button:active {
     text-align: left;
     line-height: normal;
     color: var(--foreground-color);
-    height: fit-content;
-    overflow: scroll;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-    /* make scrollbar transparent */
 }
 
 .fakelink {
@@ -258,8 +266,6 @@ button:active {
 .divider {
     display: flex;
     column-gap: 0px;
-    width: 40%;
-    margin: auto;
 }
 
 
