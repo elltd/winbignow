@@ -224,6 +224,23 @@ button:active {
     overflow-y: scroll;
 }
 
+.gallery-bevel-box-2 {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    background-color: var(--accent-color-2);
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .gallery-bevel-box img {
     width: 100%;
     position: relative;

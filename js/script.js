@@ -128,9 +128,9 @@ function redirectToPage() {
     // Posted by Umair Khan
     // Retrieved 2025-11-06, License - CC BY-SA 3.0
 
-    var redirect = ["loser.html", "loser.html", "history.html", "loser.html", "thoughts.html", "thoughts.html", "loser.html"]
+    var redirect = ["loser.html", "loser.html", "history.html", "loser.html", "thoughts.html", "revenue.html", "thoughts.html", "loser.html"]
 
-    window.location.href = redirect[Math.floor(Math.random() * 7)]
+    window.location.href = redirect[Math.floor(Math.random() * 8)]
 }
 
 //poop up

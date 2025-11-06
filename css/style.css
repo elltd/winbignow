@@ -5,6 +5,7 @@
     --foreground-color: black;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Xanh+Mono:ital@0;1&display=swap');
 
 html {
@@ -303,6 +304,8 @@ button:active {
     height: fit-content;
     overflow: scroll;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 0px;
