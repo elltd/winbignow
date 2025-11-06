@@ -10,6 +10,11 @@
 html {
     background-color: var(--background-color);
     overflow: hidden;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 body {
@@ -256,8 +261,10 @@ button:active {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     text-align: left;
-    line-height: normal;
+    line-height: 19px;
     color: var(--foreground-color);
+    font-family: "urbane-condensed", "arial", sans-serif;
+    font-family: "Xanh Mono", monospace;
 }
 
 .fakelink {
@@ -276,10 +283,10 @@ button:active {
     position: fixed;
     background-color: var(--bar);
     color: var(--foreground-color);
-    min-width: 1620px;
-    height: 40px;
+    width: 150%;
+    height: 45px;
     margin-left: -20px;
-    margin-top: -5px;
+    margin-top: -32px;
     margin-bottom: 20px;
     overflow: hidden;
     cursor: default;

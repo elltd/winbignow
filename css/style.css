@@ -275,8 +275,8 @@ button:active {
     position: fixed;
     background-color: var(--bar);
     color: var(--foreground-color);
-    min-width: 2000px;
-    height: 40px;
+    width: 150%;
+    height: 45px;
     margin-left: -20px;
     margin-top: -12px;
     margin-bottom: 20px;
