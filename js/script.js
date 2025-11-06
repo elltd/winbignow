@@ -145,4 +145,3 @@ function showWarning() {
         // window.location.href = "about:blank"; // Redirect to a blank page
     }
 }
-

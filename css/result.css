@@ -98,6 +98,7 @@ button {
     height: 100px;
     position: relative;
     background-color: #cccccc;
+
     box-sizing: border-box;
     border-style: ridge;
     border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;

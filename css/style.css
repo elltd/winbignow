@@ -10,7 +10,8 @@
 html {
 
     background-color: var(--background-color);
-
+    animation: colorchange 10s infinite alternate;
+    /* 10s duration, infinite loop, alternates direction */
 
     overflow: hidden;
     position: relative;
@@ -18,8 +19,35 @@ html {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-
 }
+
+@keyframes colorchange {
+    0% {
+        background-color: #ff0000;
+        /* Red at the start */
+    }
+
+    25% {
+        background-color: #ffff00;
+        /* Yellow at 25% of the animation */
+    }
+
+    50% {
+        background-color: #00ff00;
+        /* Green at 50% */
+    }
+
+    75% {
+        background-color: #0000ff;
+        /* Blue at 75% */
+    }
+
+    100% {
+        background-color: #ff0000;
+        /* Back to Red at 100% */
+    }
+}
+
 
 body {
     margin: 0%;
@@ -47,6 +75,7 @@ body {
     text-align: center;
     color: white;
     text-decoration: underline 3px var(--accent-color);
+
 }
 
 
