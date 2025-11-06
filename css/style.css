@@ -1,0 +1,304 @@
+:root {
+    --accent-color: #0000EE;
+    --accent-color-2: #d9ffd0;
+    --background-color: rgb(140, 250, 128);
+    --foreground-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Xanh+Mono:ital@0;1&display=swap');
+
+html {
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+body {
+    margin: 0%;
+    font-family: "urbane-condensed", "arial", sans-serif;
+    font-family: "Xanh Mono", monospace;
+
+}
+
+.bevel-box {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    padding: 0%;
+    font-size: 4.8em;
+    line-height: 0%;
+    text-shadow: -1px -1px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    -webkit-text-stroke: 0.5px black;
+
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    text-decoration: underline 3px var(--accent-color);
+}
+
+
+#play {
+    font-size: 5em;
+    line-height: 0%;
+    text-shadow: -1px -1px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    -webkit-text-stroke: 0.5px black;
+    font-family: "xanh mono", monospace;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    text-decoration: underline 3px var(--accent-color);
+}
+
+#roll-button {
+    font-size: 5em;
+    text-shadow: -1px -1px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+    font-family: "xanh mono", monospace;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    background-color: #cccccc;
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffda37;
+    transition: 0.3s;
+}
+
+button:active {
+    background-color: #4eff33;
+}
+
+
+@keyframes float {
+    from {
+        transform: translate(0, 10px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, 10px);
+    }
+}
+
+#floating {
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+
+.s-bevel-box {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    background-color: #cccccc;
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    padding: 0%;
+    font-size: 1em;
+    line-height: 0%;
+    text-align: center;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.m-bevel-box {
+    display: none;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    background-color: var(--accent-color-2);
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+
+    overflow-y: scroll;
+}
+
+.button-bevel-box {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    background-color: #dfdfdf;
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #928e8e #f0f0f0;
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 10px;
+
+    overflow: hidden;
+}
+
+.l-bevel-box {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    background-color: var(--accent-color-2);
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    padding-left: 10px;
+
+    overflow-y: scroll;
+}
+
+.gallery-bevel-box {
+    width: 500px;
+    height: 450px;
+    position: relative;
+    background-color: var(--accent-color-2);
+    box-sizing: border-box;
+    border-style: ridge;
+    border-color: #f0f0f0 #4d3a3a #6d6d6d #f0f0f0;
+    /* Light top/left, dark bottom/right */
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.gallery-bevel-box img {
+    width: 100%;
+    position: relative;
+
+    margin: 0 auto;
+
+
+    overflow-y: scroll;
+}
+
+.main-grid {
+    display: inline;
+}
+
+.float-link {
+    position: absolute;
+}
+
+#globe {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+#loser {
+    right: 10%;
+    top: 340px;
+}
+
+#probability {
+    right: 70%;
+    top: 580px;
+}
+
+.scroll-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    line-height: normal;
+    color: var(--foreground-color);
+}
+
+.fakelink {
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    column-gap: 0px;
+}
+
+
+/*marquee*/
+
+.bar {
+    position: fixed;
+    background-color: var(--bar);
+    color: var(--foreground-color);
+    min-width: 1620px;
+    height: 30px;
+    margin-left: -20px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: default;
+
+    transition:
+        height 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.bar:hover {
+    background-image: linear-gradient(to right, rgb(17, 179, 17), rgb(85, 148, 255), red, orange, rgb(255, 225, 0));
+    color: white;
+    height: 45px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.marquee {
+    display: flex;
+    position: absolute;
+    margin-top: -6px;
+    top: 50%;
+    animation: marquee 30s linear infinite;
+    white-space: nowrap;
+    animation-play-state: running;
+}
+
+.bar:hover .marquee {
+    animation-duration: 10s;
+}
+
+.bar marquee-content {
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-item {
+    margin-right: 100px;
+}
